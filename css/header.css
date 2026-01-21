@@ -1,12 +1,46 @@
 header {
-  width: 100%;
-  height: 138px;
   background-color: var(--backgroud-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 48px;
+  position: relative;
 }
 
 .logo {
   display: inline-block;
   width: 68px;
   height: 64px;
-  margin: 37px 0 0 48px;
+}
+
+.navigation-menu {
+  margin-top: 24px;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--backgroud-tertiary-color);
+}
+
+nav {
+  display: none;
+}
+
+.list-links {
+  list-style: none;
+  font-family: "Montserrat";
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
